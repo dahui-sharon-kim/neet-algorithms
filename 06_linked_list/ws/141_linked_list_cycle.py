@@ -23,9 +23,9 @@ class Solution:
 
         traveler = head
         while traveler:
-            if traveler.val in visited:
+            if traveler in visited:
                 return True
-            visited.add(traveler.val)
+            visited.add(traveler)
             traveler = traveler.next
 
         return False
