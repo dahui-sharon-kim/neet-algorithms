@@ -11,7 +11,7 @@ class LRUCache:
         self.cache = {}  # key -> node
         self.capacity = capacity
         # left와 right는 dummy nodes
-        # left는 LRU, right는 most recently used
+        # left는 LRU 바로 앞, right는 most recently used 바로 뒤
         self.left, self.right = DNode(), DNode()
         self.left.next, self.right.prev = self.right, self.left
  
