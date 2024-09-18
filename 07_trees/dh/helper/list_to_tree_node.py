@@ -29,5 +29,3 @@ def list_to_tree_node(lst: List):
         idx += 1
 
     return root
-
-print(list_to_tree_node([1, 2, 3]).right.val)
