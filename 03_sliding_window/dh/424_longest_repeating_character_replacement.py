@@ -5,12 +5,11 @@ from collections import defaultdict
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         letters = defaultdict(int)
-        length = len(s)
         maximum = 0
         left = 0
         maximum_length = 0
 
-        for right in range(length):
+        for right in range(len(s)):
             letters[s[right]] += 1
             maximum = max(maximum, letters[s[right]])
 
